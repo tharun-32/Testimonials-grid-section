@@ -28,10 +28,13 @@ ul{
     list-style: none;
 }
 .Daniel{
-    background-color: var(--daniel-background-color);
     padding: 25px;
-    color: var(--daniel-text-color-white);
+    color: var(--daniel-text-color-white);  
+    background-color: var(--daniel-background-color);
     border-radius: 10px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
 }
 .image-daniel{
     border-radius: 50%;    
@@ -161,24 +164,25 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     height: 100vh;
 }
 .grid-layout{
     display: grid;
-    grid-template-columns:250px 250px 250px 250px;
-    grid-template-rows: 250px 250px;
+    grid-auto-columns:250px 250px 250px 250px;
+    grid-auto-rows: 250px 250px;
     gap: 20px;
     grid-template-areas: 
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
-}
-.daniel-layout{
-    position: relative;
+    grid-auto-flow: row;
+    
 }
 .pattern{
-    z-index: -1;
     position: absolute;
-    top: 10;
+    z-index: -1;
+    top: 0;
+    object-fit: contain;  
 }
 
 
