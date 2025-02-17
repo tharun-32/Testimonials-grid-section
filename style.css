@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --default-font-size:13px;
+    --background-color:hsl(214, 17%, 92%);
+    --box-shadow-color:hsl(0, 0%, 81%);
+    --profile-shadow-color:hsl(264, 82%, 80%);
+    --daniel-background-color:hsl(263, 55%, 52%);
+    --jonathan-background-color:hsl(217, 19%, 35%);
+    --jeanette-background-color:hsl(0, 0%, 100%);
+    --patrick-background-color:hsl(219, 29%, 14%);
+    --kira-background-color:hsl(0, 0%, 100%);
+    --daniel-text-color-white:hsl(0, 0%, 100%);
+    --jonathan-text-color-white:hsl(0, 0%, 100%);
+    --jeanette-text-color-white:hsl(217, 19%, 35%);
+    --patrick-text-color-white:hsl(214, 17%, 92%);
+    --kira-text-color-white:hsl(217, 19%, 35%);
+    --kira-verified-text-color:hsl(214, 17%, 92%);
+    --jonathan-verified-text-color:hsl(214, 17%, 92%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", serif;
+    font-size: 13px;
+}
+ul{
+    list-style: none;
+}
+.Daniel{
+    background-color: var(--daniel-background-color);
+    padding: 25px;
+    color: var(--daniel-text-color-white);
+    border-radius: 10px;
+}
+.image-daniel{
+    border-radius: 50%;    
+}
+.name-daniel{
+    display: flex;
+    flex-direction: column;
+}
+.name-daniel :first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name-daniel :last-child{
+    font-size: 12px;
+}
+.Daniel>ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Jonathan{
+    background-color: var(--jonathan-background-color);
+    padding: 25px;
+    color: var(--jonathan-text-color-white);
+    border-radius: 10px;
+}
+.image-jonathan{
+    border-radius: 50%;    
+}
+.name-jonathan{
+    display: flex;
+    flex-direction: column;
+}
+.name-jonathan :first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name-jonathan :last-child{
+    font-size: 12px;
+}
+.Jonathan>ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Jeanette{
+    background-color: var(--jeanette-background-color);
+    padding: 25px;
+    color: var(--jeanette-text-color-white);
+    border-radius: 10px;
+}
+.image-jeanette{
+    border-radius: 50%;    
+}
+.name-jeanette{
+    display: flex;
+    flex-direction: column;
+}
+.name-jeanette :first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name-jeanette :last-child{
+    font-size: 12px;
+}
+.Jeanette>ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Patrick{
+    background-color: var(--patrick-background-color);
+    padding: 25px;
+    color: var(--patrick-text-color-white);
+    border-radius: 10px;
+}
+.image-patrick{
+    border-radius: 50%;    
+}
+.name-patrick{
+    display: flex;
+    flex-direction: column;
+}
+.name-patrick :first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name-patrick :last-child{
+    font-size: 12px;
+}
+.Patrick>ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Kira{
+    background-color: var(--kira-background-color);
+    padding: 25px;
+    color: var(--kira-text-color-white);
+    border-radius: 10px;
+}
+.image-kira{
+    border-radius: 50%;    
+}
+.name-kira{
+    display: flex;
+    flex-direction: column;
+}
+.name-kira :first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name-kira :last-child{
+    font-size: 12px;
+}
+.Kira>ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+h2{
+    margin: 20px 0 20px;
+}
+body{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns:250px 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+.daniel-layout{
+    position: relative;
+}
+.pattern{
+    z-index: -1;
+    position: absolute;
+    top: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
